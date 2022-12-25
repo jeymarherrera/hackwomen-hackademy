@@ -2,6 +2,7 @@ Algoritmo ParImpar
 	//bloque declarativo
 	Definir cantidad, num Como Entero
 	
+//	datos de entrada
 	Escribir "Bienvenid@! Necesito que porfa llenes un arreglo con numeros"
 	Escribir "Cuantas numeros deseas ingresar dentro del arreglo"
 	Leer cantidad
@@ -35,5 +36,4 @@ Algoritmo ParImpar
 	Para  i<-0 Hasta cantidad-1 Con Paso 1 Hacer
 		Escribir i+1,". ", copiaArreglo[i], " en la posicion ", i
 	FinPara
-	
 FinAlgoritmo

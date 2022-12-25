@@ -2,8 +2,8 @@ Algoritmo SopaLetras
 	//bloque declarativo
 	Definir cantidadLetras, i, j como entero
 	Definir letra Como Caracter
-	salto = " "
 	cantidadLetras = 50
+	
 	Dimension miNombre[cantidadLetras], sopaLetra[cantidadLetras,cantidadLetras], letras[20]
 	letras[0] = 'a'
 	letras[1] = 'h'
@@ -26,7 +26,6 @@ Algoritmo SopaLetras
 	
 	//llenado matriz
 	Escribir salto
-	
 	Escribir "..Generando sopa de letras"
 	Para i<-1 Hasta cantidadLetras Con Paso 1 Hacer
 		Para j<-1 Hasta cantidadLetras Con Paso 1 Hacer
@@ -41,7 +40,6 @@ Algoritmo SopaLetras
 	
 	//impresion de la matriz - sopa de letra
 	Escribir salto
-	
 	Escribir "Encuentre el nombre"
 	Para i<-1 Hasta cantidadLetras Con Paso 1 Hacer
 		EScribir salto
@@ -49,6 +47,5 @@ Algoritmo SopaLetras
 			Escribir Sin Saltar " " ,sopaLetra[i,j], " " Sin Saltar
 		FinPara
 	FinPara
-	
 	Escribir salto
 FinAlgoritmo

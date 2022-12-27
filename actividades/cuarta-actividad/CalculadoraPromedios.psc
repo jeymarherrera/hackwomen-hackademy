@@ -2,7 +2,6 @@ Algoritmo CalculadoraPromedios
 	//bloque declarativo
 	Definir acumulador, promedio, calificacion Como Real
 	Definir cantidad Como Entero
-	salto = " "
 	acumulador <- 0
 	promedio <- 0
 	

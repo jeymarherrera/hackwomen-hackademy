@@ -5,7 +5,7 @@ Algoritmo SumaImpares
 	
 	//insercion de datos de entrada
 	Repetir
-		Escribir "Ingrese un numero impar entre 1-31"
+		Escribir "Ingrese un numero impar"
 		Leer numImpar
 	Hasta Que numImpar % 2 <> 0
 	

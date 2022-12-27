@@ -2,7 +2,6 @@ Algoritmo ContieneEdad
 	//bloque declarativo
 	Definir cantidad, edad, posicion Como Entero
 	Definir encontrado Como Logico
-	saldo = " "
 	miEdad <- 21
 	encontrado = falso
 
@@ -11,7 +10,6 @@ Algoritmo ContieneEdad
 	Leer cantidad
 	
 	Dimension edadesIngresadas[cantidad]
-	
 	//llenado arreglo
 	Escribir salto
 	Para  i<-0 Hasta cantidad-1 Con Paso 1 Hacer
@@ -47,5 +45,4 @@ Algoritmo ContieneEdad
 	Para  i<-0 Hasta cantidad-1 Con Paso 1 Hacer
 		Escribir i+1,". ", edadesIngresadas[i], " en la posicion ", i
 	FinPara
-	
 FinAlgoritmo

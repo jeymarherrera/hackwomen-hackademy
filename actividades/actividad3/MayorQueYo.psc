@@ -6,11 +6,9 @@ Algoritmo MayorQueYo
 	miEdad <- 21
 	Para i<-0 hasta 2 Con Paso 1 Hacer
 		Escribir  ("Ingrese el nombre de la persona")
-		Leer nombrePersona
-		nombres[i] <- nombrePersona
+		Leer nombres[i] 
 		Escribir ("Ingrese la edad de la persona")
-		Leer edadPersona
-		edades[i] <- edadPersona
+		Leer edades[i]
 	FinPara
 	
 	Para i<-0 hasta 2 Con Paso 1 Hacer

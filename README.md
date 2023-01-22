@@ -7,7 +7,7 @@ Hackwomen.dev es un programa 100% becado para mujeres que buscan obtener un empl
 ## Plataforma - Para quienes vienen desde cero
 Aquí se aprenderá sobre ciencias computacionales desde cero. Seleccionando un área de especialización (backend, frontend, móvil). <br>
 
-## Bootcamp - Si ya se tienes conocimiento
+## Bootcamp - Si ya se tiene conocimiento
 Esta etapa es muy demandante y requiere un mínimo de 4 horas diarias, durante 20 semanas, ya viviremos la experiencia de desarrollar software de la vida real en un ambiente controlado. <br>
 
 ## Soft Skills - Plataforma + Bootcamp

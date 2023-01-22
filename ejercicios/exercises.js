@@ -183,5 +183,37 @@ console.log(calculator(2, "*", 2));
 console.log(calculator(4, "/", 0));
 
 //ejercicio 14
+function getBudgets(arr) {
+    var budget = 0;
+      for(var i=0; i<arr.length; i++){
+          budget = budget + arr[i].budget;
+      }
+    return budget;
+  }
+  
+  console.log(getBudgets([
+      { name: "Juan", age: 21, budget: 23000 },
+      { name: "Steve", age: 32, budget: 40000 },
+      { name: "Martin", age: 16, budget: 2700 }
+  ]));
+
+  console.log(getBudgets([
+    { name: "Juan", age: 21, budget: 29000 },
+    { name: "Steve", age: 32, budget: 32000 },
+    { name: "Martin", age: 16, budget: 1600 }
+]));
 
 //ejercicio 15
+function countBoomerangs(arr) {
+	let contador = 0;
+    for (let i = 0; i < arr.length - 2; i++) {
+        if (arr[i] === arr[i+2] && arr[i] !== arr[i+1]) {
+            contador++;
+        }
+    }
+    return contador;
+}
+
+console.log(countBoomerangs([9, 5, 9, 5, 1, 1, 1]));
+console.log(countBoomerangs([5, 6, 6, 7, 6, 3, 9]));
+console.log(countBoomerangs([4, 4, 4, 9, 9, 9, 9]));

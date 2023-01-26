@@ -166,4 +166,109 @@ int('11')  #  De string a entero
 # 11
 
 float('3.14') #  De string a float
-# 3.14    
+# 3.14   
+
+
+#ciclo while
+while True:
+   name = input('¿Quién eres? ')
+   if name != 'Hack':
+        continue
+   password = input('Password? (It is a fish.): ')
+   if password == 'swordfish':
+       break
+
+print('Access granted.')
+# Who are you? Joe
+# Who are you? Padawan
+# Who are you? Hack
+# Password? (It is a fish.): swordfish
+# Access granted.
+
+# ciclo for
+pets = ['Bella', 'Milo', 'Loki']
+for pet in pets:
+ print(pet)
+
+# Bella
+# Milo
+# Loki
+
+#operador de comparacion
+#  Operador			Significado
+
+#    ==				Equal to
+#    !=	  			Not equal to
+#    <				Less than
+#    >				Greater Than
+#    <=			 	Less than or Equal to
+#    >=				Greater than or Equal to
+
+42 == 42
+True
+
+40 == 42
+False
+
+'hello' == 'hello'
+True
+
+'hello' == 'Hello'
+False
+
+'dog' != 'cat'
+True
+
+42 == 42.0
+True
+
+42 == '42'
+False
+
+#operadores booleanos
+# Operador ´and´
+
+#  Expresión			Responde
+
+#  True and True		True
+#  True and False		False
+#  False and True		False
+#  False and False		False
+
+# Operador ´or´
+
+#  True or True			True
+#  True or False		True
+#  False or True		True
+#  False or False		False
+
+# Operador 'not´
+
+#  not True			False
+#  not False		True
+
+#mezcla de operadores
+(4 < 5) and (5 < 6)
+True
+
+(4 < 5) and (9 < 6)
+False
+
+(1 == 2) or (2 == 2)
+True
+
+2 + 2 == 4 and not 2 + 2 == 5 and 2 * 2 == 2 + 2
+True
+
+#if
+name = 'Padawan'
+
+if name == 'Padawan':
+  print('Hi, Padawan')
+...
+# Hi, Padawan
+
+if name != 'Hack':
+   print('You are not Hack')
+
+# You are not Hack

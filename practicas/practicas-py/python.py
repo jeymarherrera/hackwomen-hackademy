@@ -272,3 +272,78 @@ if name != 'Hack':
    print('You are not Hack')
 
 # You are not Hack
+
+# if else
+name = 'Padawan'
+
+if name == 'Hack':
+ print('Hi, Hack.')
+else:
+ print('You are not Hack')
+...
+# You are not Hack
+
+#operador condicional ternario
+age = 15
+
+ # Operador ternario:
+print('kid' if age < 18 else 'adult')
+# output: kid
+
+# Operador ternario:
+print('kid' if age < 13 else 'teen' if age < 18 else 'adult')
+# output: kid
+
+#swich case
+# Versión de python 3.10
+
+response_code = 201
+match response_code:
+     case 200:
+         print("OK")
+     case 201:
+         print("Created")
+     case 300:
+         print("Multiple Choices")
+     case 307:
+         print("Temporary Redirect")
+     case 404:
+         print("404 Not Found")
+     case 500:
+         print("Internal Server Error")
+     case 502:
+         print("502 Bad Gateway")
+
+# Created
+
+#ciclo while
+var = 0
+while var < 5:
+     print('Hello, world.')
+     var = var + 1
+
+# Hello, world.
+# Hello, world.
+# Hello, world.
+# Hello, world.
+# Hello, world.
+
+# ciclo while break
+while True:
+ name = input('Escribe tu nombre: ')
+ if name == 'nombre':
+  break
+
+print('Gracias')
+# Escribe tu nombre: nombre
+# Gracias
+
+#range()
+for i in range(5):
+    print(f'Will stop at 5! or 4? ({i})')
+
+# Will stop at 5! or 4? (0)
+# Will stop at 5! or 4? (1)
+# Will stop at 5! or 4? (2)
+# Will stop at 5! or 4? (3)
+# Will stop at 5! or 4? (4)

@@ -28,19 +28,19 @@ console.log(nextEdge(5,7));
 
 //ejercicio 5
 function and(a, b) {
-	if (a === true && b === true){
-	  return true;
-	}
-  	else{
-	  return false;
-	}
+   if (a === true && b === true){
+      return true;
+   }
+   else {
+      return false;
+   }
 }
 
 console.log(and(false, true));
 
 //ejercicio 6
 function isSymmetrical(num) {
-	return ""+num === (""+num).split("").reverse().join("")
+   return ""+num === (""+num).split("").reverse().join("")
 }
 
 console.log(isSymmetrical(44444444));
@@ -66,10 +66,10 @@ function canNest(arr1, arr2) {
          menor1 = arr1[i];
        }
        else if (arr1[i]>mayor1){
-          mayor1 = arr1[i];
+         mayor1 = arr1[i];
        }
        else if (arr1[i]<menor1){
-          menor1 = arr1[i];
+         menor1 = arr1[i];
        }
     }
     
@@ -79,10 +79,10 @@ function canNest(arr1, arr2) {
          menor2 = arr2[i];
        }
        else if (arr2[i]>mayor2){
-          mayor2 = arr2[i];
+         mayor2 = arr2[i];
        }
        else if (arr2[i]<menor2){
-          menor2 = arr2[i];
+         menor2 = arr2[i];
        }
     }
     
@@ -103,7 +103,7 @@ function canNest(arr1, arr2) {
     let factorial = 1;
     
     while(n != 0){
-        factorial = factorial * n;
+      factorial = factorial * n;
       n = n - 1;
     }
     return factorial;
@@ -132,7 +132,7 @@ console.log(sortDescending(73065));
   
 //ejercicio 11
 function totalVolume(...boxes) {
-	let total = 0;
+    let total = 0;
     for (let i = 0; i < boxes.length; i++) {
         let volumen = boxes[i][0] * boxes[i][1] * boxes[i][2];
         total += volumen;
@@ -161,7 +161,7 @@ console.log(isTriplet(1, 2, 3));
 
 //ejercicio 13
 function calculator(num1, operator, num2) {
-	if (operator === "+") {
+    if (operator === "+") {
         return num1 + num2;
     } else if (operator === "-") {
         return num1 - num2;

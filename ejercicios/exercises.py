@@ -8,3 +8,17 @@ def sumOfCubes(nums):
 
 
 print(sumOfCubes([3, 4, 5]))
+
+
+class budget:
+  def __init__(self, name, age, budget):
+    self.name = name
+    self.age = age
+    self.budget = budget
+
+def get_budgets(lists):
+  suma = 0
+  for i in list:
+    suma = suma + i.budget
+  print(suma)
+  return suma

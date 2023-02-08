@@ -109,3 +109,4 @@ function swapCards(n1, n2) {
   console.log(swapCards(12, 28));
   console.log(swapCards(67, 53));
   console.log(swapCards(77, 54));
+

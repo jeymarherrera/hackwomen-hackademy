@@ -110,3 +110,81 @@ function swapCards(n1, n2) {
   console.log(swapCards(67, 53));
   console.log(swapCards(77, 54));
 
+
+  //segunda forma
+  function swapCards(n1, n2) {  
+    var newNum1 = 0;
+    var newNum2 = 0;
+  
+    let num1digits = n1.toString().split("")
+    let num2digits = n2.toString().split("")
+    
+    let number1 = num1digits[0]
+    let number2 = num2digits[0]
+    let number3 = num1digits[1]
+    let number4 = num2digits[1]
+    
+  
+    if (number1 === number3) {
+      newNum1 = number3 + number4;
+    newNum2 = number1 + number2;
+    console.log(newNum1)
+    console.log(newNum2)
+    } else{
+      newNum1 = number1 + number2;
+      newNum2 = number3 + number4;
+    console.log(newNum1)
+    console.log(newNum2)
+    }  
+    
+    
+   if (newNum1 > newNum2) {
+      return true;
+    } else {
+      return false;
+    }
+   
+  }
+    
+    console.log(swapCards(41, 79));
+
+    //prueba 3
+    function swapCards(n1, n2) {  
+      var newNum1 = 0;
+      var newNum2 = 0;
+      
+      let paulMin = Math.min(n1 % 10, Math.floor(n1 / 10));
+      let paulMax = Math.max(n1 % 10, Math.floor(n1 / 10));
+      let opponentMin = Math.min(n2 % 10, Math.floor(n2 / 10));
+      let opponentMax = Math.max(n2 % 10, Math.floor(n2 / 10));
+      
+      let num1digits = n1.toString().split("")
+      let num2digits = n2.toString().split("")
+      
+      let number1 = num1digits[0]
+      let number2 = num2digits[0]
+      let number3 = num1digits[1]
+      let number4 = num2digits[1]
+      
+    
+      if (paulMin === paulMax) {
+        newNum1 = number3 + number4;
+      newNum2 = number1 + number2;
+      console.log(newNum1)
+      console.log(newNum2)
+      } else {
+        newNum1 = parseInt(paulMax.toString() + opponentMin.toString());
+        newNum2 = parseInt(paulMin.toString() + opponentMax.toString());
+      parseInt(newNum1)
+      parseInt(newNum2)
+      }  
+      
+     if (newNum1 > newNum2) {
+        return true;
+      } else {
+        return false;
+      }
+     
+    }
+      
+      console.log(swapCards(41, 79));

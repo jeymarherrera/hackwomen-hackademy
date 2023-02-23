@@ -9,6 +9,8 @@ const fileUpload = async (file, namePath) =>{
 
         let response = {};
         response.type = matches[1];
+        console.log(`TYPE FILE: ${matches[1]}`)
+        console.log(`DATA FILE: ${matches[2]}`)
         response.data = buffer.from(matches[2], "base64");
         let extension = response.type.split("/");
         extension = extension[1].split("+");
@@ -44,3 +46,18 @@ const fileUpload = async (file, namePath) =>{
 };
 
 module.exports = {fileUpload};
+//usar cloudinary
+
+///install cloudinary package
+//npm install cloudinary
+//realizar configuracion  en .env
+// CLOUD_NAME=""
+// CLOUD_API_KEY=""
+// CLOUD_SECRET=""
+
+//En config > config.js
+// CLUDINARY:{
+//     NAME:process.env.CLOUD_NAME,
+//     API_KEY:process.env.CLOUD_API_KEY,
+//     SECRET: process.env.CLOUD_SECRET,
+// },
